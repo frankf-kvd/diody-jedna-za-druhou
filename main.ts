@@ -3,7 +3,7 @@ basic.forever(function () {
         for (let x = 0; x <= 5; x++) {
             led.plot(x, y)
             led.unplot(x - 1, y)
-            control.waitMicros(100000)
+            basic.pause(100)
         }
     }
 })
